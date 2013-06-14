@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Sapient</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div id="wrapper">
+    <header class="clearfix shadow-down">
+        <img src="images/sapient-logo.png" class="f-left">
+        <nav class="f-right">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="" class="selected">Contact Us</a></li>
+            </ul>
+        </nav>
+        <select>
+            <option>Home</option>
+            <option>About us</option>
+            <option>Projects</option>
+            <option>Contact Us</option>
+        </select>
+    </header>
+    <div id="content" class="clearfix">
+        <h1>Contact Us</h1>
+        <hr>
+        <article class="font-armata">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+
+            <p id="comment" class="validated rounded-corner">
+                Form submitted successfully.
+            </p>
+            <section class="clearfix">
+                <form action="" method="post" id="contact_form" novalidate="novalidate">
+                    <article id="contact-form" class="f-left ">
+                        <fieldset>
+                            <div class="field-group">
+                                <input type="text" placeholder="Firstname Lastname" name="fname_lname">
+                            </div>
+                            <div class="field-group">
+                                <input type="password" placeholder="Password" name="password" id="password">
+                            </div>
+                            <div class="field-group">
+                                <input type="password" placeholder="Confirm Password" name="password_com">
+                            </div>
+                            <div class="field-group">
+                                <input type="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="field-group">
+                                <input type="url" placeholder="Website" name="website">
+                            </div>
+                        </fieldset>
+                    </article>
+                    <article id="business-unit" class="f-right">
+                        <div>Business Unit</div>
+                        <ul>
+                            <li><label><input type="checkbox">Sapient</label>
+                                <ul>
+                                    <li><label><input type="checkbox">Sapient Nitro</label></li>
+                                    <li><label><input type="checkbox">Sapient Global Market</label></li>
+                                    <li><label><input type="checkbox">Sapient Government Service</label></li>
+                                    <li><label><input type="checkbox">Sapient (m)PHASIZED</label></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </article>
+                    <br class="clear">
+                    <input type="submit" value="Submit" class="f-left">
+                </form>
+            </section>
+        </article>
+        <aside id="carousel">
+
+        </aside>
+        <script id="carousel-template" type="x-handlebars-template">
+            {{#each this}}
+            <div class="carousel-item">
+                <img src="{{image}}">
+
+                <div class="carousel-strip"></div>
+                <article class="carousel-artical">
+                    <h2>{{heading}}</h2>
+
+                    <p>{{text}}</p>
+                </article>
+            </div>
+            {{/each}}
+        </script>
+         
+    </div>
+    <footer>
+
+    </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/vendor/handlebars.js"></script>
+<script src="js/vendor/jquery.validate.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+</body>
+</html>
